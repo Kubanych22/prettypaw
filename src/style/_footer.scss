@@ -1,0 +1,50 @@
+.footer {
+  margin-top: 60px;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 52px;
+
+    @include lg {
+      font-size: 20px;
+    }
+  }
+
+  &__logo {
+    display: block;
+    @include md {
+      grid-column: 1 / 2;
+    }    
+  }
+
+  &__social-list {
+    display: flex;
+    gap: 16px;
+    grid-column: 2 / 3;
+
+    @include lg {
+      margin-left: auto;
+      margin-right: 125px;
+    }
+  }
+
+  &__developers {
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    grid-column: 2 / 3;
+
+    @include lg {
+      margin-left: auto;
+    }
+  }
+
+  &__copyright {
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+  }
+}
+
