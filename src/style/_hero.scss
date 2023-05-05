@@ -1,45 +1,45 @@
 .hero {
-  position: relative; 
-  background-image: url('../img/poster@1x.jpg');
-  background-image: image-set(
-    url('../img/poster@2x.webp') 2x,
-    url('../img/poster@1x.webp') 1x,
-    url('../img/poster@2x.jpg') 2x,
-    url('../img/poster@1x.jpg') 1x
+  position: relative;
+  background-image: url('../img/poster@1x.jpg'),
+  image-set(
+      url('../img/poster@2x.webp') 2x,
+      url('../img/poster@1x.webp') 1x,
+      url('../img/poster@2x.jpg') 2x,
+      url('../img/poster@1x.jpg') 1x
   );
 
   background-size: cover;
   background-position: center;
 
   @include md {
-    background-image: url('../img/poster-xl@1x.jpg');
-    background-image: image-set(
-      url('../img/poster-xl@2x.webp') 2x,
-      url('../img/poster-xl@1x.webp') 1x,
-      url('../img/poster-xl@2x.jpg') 2x,
-      url('../img/poster-xl@1x.jpg') 1x
+    background-image: url('../img/poster-xl@1x.jpg'),
+    image-set(
+        url('../img/poster-xl@2x.webp') 2x,
+        url('../img/poster-xl@1x.webp') 1x,
+        url('../img/poster-xl@2x.jpg') 2x,
+        url('../img/poster-xl@1x.jpg') 1x
     );
   }
 
   @include xl {
-    background-image: url('../img/poster-xl@2x.jpg');
-    background-image: image-set(
-      url('../img/poster-xl@4x.webp') 2x,
-      url('../img/poster-xl@2x.webp') 1x,
-      url('../img/poster-xl@4x.jpg') 2x,
-      url('../img/poster-xl@2x.jpg') 1x
+    background-image: url('../img/poster-xl@2x.jpg'),
+    image-set(
+        url('../img/poster-xl@4x.webp') 2x,
+        url('../img/poster-xl@2x.webp') 1x,
+        url('../img/poster-xl@4x.jpg') 2x,
+        url('../img/poster-xl@2x.jpg') 1x
     );
   }
 
-  @include xl {
-    background-image: url('../img/poster-xl@4x.jpg');
-    background-image: image-set(
-      url('../img/poster-xl@4x.webp') 2x,
-      url('../img/poster-xl@4x.jpg') 2x
+  @include xxl {
+    background-image: url('../img/poster-xl@4x.jpg'),
+    image-set(
+        url('../img/poster-xl@4x.webp') 2x,
+        url('../img/poster-xl@4x.jpg') 2x
     );
   }
 
-  &__container {  
+  &__container {
     position: relative;
     z-index: 10;
     min-height: 554px;
@@ -49,8 +49,13 @@
     flex-direction: column;
     justify-content: flex-end;
 
+    @include lg {
+      padding-bottom: 74px;
+    }
+
     @include xl {
       min-height: 780px;
+      padding-bottom: 100px;
     }
     @include xxl {
       min-height: 100vh;
@@ -67,8 +72,8 @@
 
     @include lg {
       font-size: 52px;
+      margin-bottom: 40px;
     }
-
   }
 
   &__subtitle {
