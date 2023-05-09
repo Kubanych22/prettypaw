@@ -10,7 +10,11 @@ import {sliderInit} from './modules/sliders';
 
 import {videoBackgroundInit} from './modules/videoBackground';
 
+import {menuControl} from './modules/menuControl';
+
 videoBackgroundInit();
+
+menuControl();
 
 sliderInit('.about__slider', {
   pagination: {
@@ -20,7 +24,7 @@ sliderInit('.about__slider', {
 
 sliderInit('.career__slider', {
   pagination: {
-    el: '.career__slider-pagination'
+    el: '.about__slider-pagination'
   },
     breakpoints: {
       768: {
