@@ -8,6 +8,10 @@ import './index.scss';
 
 import {sliderInit} from './modules/sliders';
 
+import {videoBackgroundInit} from './modules/videoBackground';
+
+videoBackgroundInit();
+
 sliderInit('.about__slider', {
   pagination: {
     el: '.about__slider-pagination'
@@ -15,18 +19,24 @@ sliderInit('.about__slider', {
 });
 
 sliderInit('.career__slider', {
+  pagination: {
+    el: '.career__slider-pagination'
+  },
     breakpoints: {
       768: {
-        slidesPerView: 3,
-        spaceBetween: 20
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+        // pagination: false
       },
       1024: {
-        slidesPerView: 3,
-        spaceBetween: 26
+        slidesPerView: 'auto',
+        spaceBetween: 26,
+        // pagination: false
       },
       1240: {
-        slidesPerView: 4,
-        spaceBetween: 30
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+        // pagination: false
       }
     }
 });
@@ -34,13 +44,6 @@ sliderInit('.career__slider', {
 const videoBG = document.querySelector('.video-bg');
 
 videoBG.innerHTML = `
-  <source src="video/video.webm" type="video/webm">
-  <source src="video/video.mp4" type="video/mp4">
-`;
-
-const videoBGLoc = document.querySelector('.location__video-bg');
-
-videoBGLoc.innerHTML = `
   <source src="video/video.webm" type="video/webm">
   <source src="video/video.mp4" type="video/mp4">
 `;
