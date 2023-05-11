@@ -140,18 +140,6 @@ iframe {
     background-position: center;
   }
 
-  &:hover {
-    color: $main;
-    &:after {
-      background-image: url('../img/arrow-right-hover.svg');
-    }
-  }
-
-  &:focus {
-    border: 2px solid #000000;
-    outline: none;
-  }
-
   @include lg {
     padding: 18px 32px;
     font-size: 20px;

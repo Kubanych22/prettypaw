@@ -52,7 +52,7 @@
       color: $back;
       pointer-events: none;
     }
-    
+
     @include xl {
       display: block;
       padding: 16px 30px;
@@ -66,16 +66,7 @@
       }
     }
   }
-  
-  &__link:hover {
-    color: $back;
-  }
-  
-  &__link:focus {
-    background-color: $back;
-    outline: none;
-  }
-  
+
   &__button {
     display: block;
     width: 36px;
