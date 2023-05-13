@@ -98,7 +98,7 @@
       }
     }
 
-    &_mammals::before {
+    &-mammals::before {
       background-image: url('../img/mammals.jpg');
       background-image: image-set(
           url('../img/mammals_2x.webp') 2x,
@@ -116,7 +116,7 @@
       }
     }
 
-    &_birds::before {
+    &-birds::before {
       background-image: url('../img/birds.jpg');
       background-image: image-set(
           url('../img/birds_2x.webp') 2x,
@@ -134,7 +134,7 @@
       }
     }
 
-    &_reptiles::before {
+    &-reptiles::before {
       background-image: url('../img/reptiles.jpg');
       background-image: image-set(
           url('../img/reptiles_2x.webp') 2x,
@@ -152,7 +152,7 @@
       }
     }
 
-    &_water::before {
+    &-water::before {
       background-image: url('../img/water.jpg');
       background-image: image-set(
           url('../img/water_2x.webp') 2x,
@@ -170,7 +170,7 @@
       }
     }
 
-    &_insects::before {
+    &-insects::before {
       background-image: url('../img/insects.jpg');
       background-image: image-set(
           url('../img/insects_2x.webp') 2x,
