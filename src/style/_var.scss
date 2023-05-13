@@ -1,11 +1,11 @@
-$back: #FFAA05;
+$back: #ffaa05;
 $main: #000000;
 $second: #ffffff;
 
 @mixin sm {
   @media (min-width: 576px) {
     @content;
-  }  
+  }
 }
 
 @mixin md {

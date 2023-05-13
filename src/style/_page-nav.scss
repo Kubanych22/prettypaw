@@ -1,0 +1,25 @@
+.page-nav {
+  grid-area: nav;
+  display: none;
+  @include lg {
+    display: block;
+    padding-top: 100px;
+  }
+
+  &__navigation {
+
+    &_item {
+      padding-bottom: 24px;
+      font-weight: 1000;
+      color: $second;
+    }
+
+    &_link {
+      white-space: nowrap;
+    }
+
+    &_link_active {
+      color: $main;
+    }
+  }
+}
