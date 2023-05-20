@@ -1,18 +1,37 @@
 .page {
-  grid-area: career;
+  padding-top: 120px;
+  padding-bottom: 40px;
 
   @include lg {
-    padding-top: 100px;
+    padding-top: 216px;
+    padding-bottom: 100px;
   }
+
   &__container {
-    max-width: 920px;
-    margin: 0 auto;
+    padding: 0 16px;
+
+    @include md {
+      max-width: 980px;
+      padding: 0 30px;
+    }
+
+    @include lg {
+      max-width: 1142px;
+      padding-left: 192px;
+    }
+
+    @include xxl {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 0;
+    }
   }
 
   &__title {
-    font-size: 32px;
     font-weight: 1000;
-    line-height: 42px;
+    font-size: 32px;
+    line-height: 1;
+    text-transform: uppercase;
     color: $second;
     margin-bottom: 24px;
 
@@ -22,40 +41,79 @@
     }
   }
 
-  &__description {
+  &__text-block {
     margin-bottom: 40px;
+
+    @include lg {
+      margin-bottom: 60px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
-  &__description-first {
-    margin-bottom: 0;
+  &__text {
+    margin-bottom: 16px;
+
+    @include lg {
+      margin-bottom: 20px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
-  &__picture {
-    max-width: 1440px;
+  &__image-block {
     margin-bottom: 40px;
-  }
 
-  &__picture:last-of-type {
-    margin-bottom: 30px;
+    @include lg {
+      margin-bottom: 60px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &_double {
+      --gap: 18px;
+      @include sm {
+        display: flex;
+        gap: var(--gap);
+        .page__image {
+          width: calc(50% - var(--gap) / 2);
+        }
+      }
+
+      @include lg {
+        --gap: 20px;
+      }
+
+      @include xl {
+        --gap: 30px;
+      }
+    }
   }
 
   &__image {
-    margin: 0 auto;
-    border-radius: 16px;
-  }
-
-  &__image_wrapper {
-    display: flex;
-    gap: 20px;
-  }
-
-  &__image:nth-child(2) {
-    display: none;
-    @include md {
-      display: block;
+    img {
+      object-fit: cover;
+      border-radius: 16px;
+      height: 308px;
     }
-  }
-  &__link {
-    margin-bottom: 60px;
+
+    &:nth-child(2) {
+      display: none;
+    }
+
+    @include sm {
+      height: auto;
+      flex-grow: 1;
+
+      &:nth-child(2) {
+        display: block;
+      }
+    }
   }
 }

@@ -13,9 +13,8 @@ import {videoBackgroundInit} from './modules/videoBackground';
 
 import {menuControl} from './modules/menuControl';
 import {locationHover} from './modules/locationHover';
-import {getHeightHeader} from './modules/getHeightHeader';
-
-getHeightHeader();
+import {initScrollTopButton} from './modules/scrollTopButton';
+import {pageControlInit} from './modules/pageControl';
 
 videoBackgroundInit();
 
@@ -23,9 +22,16 @@ menuControl();
 
 locationHover();
 
+initScrollTopButton('arrow-top', {
+  hover: false,
+});
+
+pageControlInit();
+
 sliderInit('.about__slider', {
   pagination: {
-    el: '.about__slider-pagination'
+    el: '.about__slider-pagination',
+    enabled: true,
   }
 });
 
@@ -37,23 +43,30 @@ careerImageItems.forEach((item, i) => {
 
 sliderInit('.career__slider', {
   pagination: {
-    el: '.career__slider-pagination'
+    el: '.career__slider-pagination',
+    enabled: true,
   },
     breakpoints: {
       576: {
         slidesPerView: 'auto',
         spaceBetween: 20,
-        pagination: false
+        pagination: {
+          enabled: false
+        },
       },
       1024: {
         slidesPerView: 'auto',
         spaceBetween: 26,
-        pagination: false
+        pagination: {
+          enabled: false
+        },
       },
       1240: {
         slidesPerView: 'auto',
         spaceBetween: 30,
-        pagination: false
+        pagination: {
+          enabled: false
+        },
       }
     }
 });
