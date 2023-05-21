@@ -13,7 +13,6 @@ export const locationHover = () => {
     const description = item.querySelector('.location__description');
 
     const tl = gsap.timeline({paused: true});
-
     tl.to(content, {opacity: 0, duration: 0.5})
       .to(content, {
         transform: 'none',

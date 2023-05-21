@@ -96,8 +96,9 @@
     }
   }
 
-  &__image {
-    img {
+  &__image-wrapper {
+
+    &_pict {
       object-fit: cover;
       border-radius: 16px;
       height: 308px;

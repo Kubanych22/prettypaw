@@ -15,11 +15,11 @@
 <body>
   <header class="header">
     <div class="container header__container">
-      <img src="img/logo.svg" alt="Оранжевый логотип Pretty Paw" class="header__logo">
+      <img class="header__logo" src="img/logo.svg" alt="Оранжевый логотип Pretty Paw">
       <nav class="header__nav navigation">
         <ul class="navigation__list">
           <li class="navigation__list-item">
-            <a href="/index.html" class="navigation__link navigation__link_active">Главная</a>
+            <a href="index.html" class="navigation__link navigation__link_active">Главная</a>
           </li>
           <li class="navigation__list-item">
             <a href="page.html#about" class="navigation__link">О&nbsp;зоосаде</a>
@@ -67,7 +67,7 @@
         </div>
 
         <figure class="page__image-block">
-          <picture class="page__image">
+          <picture class="page__image-wrapper">
             <source srcset="img/deers_xxl.webp" media="(min-width: 1440px)" type="image/webp">
             <source srcset="img/deers_xxl.jpg" media="(min-width: 1440px)">
             <source srcset="img/deers_desktop.webp" media="(min-width: 1280px)" type="image/webp">
@@ -77,7 +77,7 @@
             <source srcset="img/deers_tablet.webp" media="(min-width: 768px)" type="image/webp">
             <source srcset="img/deers_tablet.jpg" media="(min-width: 768px)">
             <source srcset="img/deers.webp" type="image/webp">
-            <img src="img/deers.jpg" alt="Стадо оленей" loading="lazy">
+            <img class="page__image-wrapper_pict" src="img/deers.jpg" alt="Стадо оленей" loading="lazy">
           </picture>
         </figure>
         <div class="page__text-block">
@@ -86,7 +86,7 @@
           </p>
         </div>
         <figure class="page__image-block page__image-block_double">
-          <picture class="page__image">
+          <picture class="page__image-wrapper">
             <source srcset="img/women-dog_xxl.webp" media="(min-width: 1440px)" type="image/webp">
             <source srcset="img/women-dog_xxl.jpg" media="(min-width: 1440px)">
             <source srcset="img/women-dog_desktop.webp" media="(min-width: 1280px)" type="image/webp">
@@ -96,9 +96,9 @@
             <source srcset="img/women-dog_tablet.webp" media="(min-width: 768px)" type="image/webp">
             <source srcset="img/women-dog_tablet.jpg" media="(min-width: 768px)">
             <source srcset="img/women-dog.webp" type="image/webp">
-            <img src="img/women-dog.jpg" alt="Дама с собачкой" loading="lazy">
+            <img class="page__image-wrapper_pict" src="img/women-dog.jpg" alt="Дама с собачкой" loading="lazy">
           </picture>
-          <picture class="page__image">
+          <picture class="page__image-wrapper">
             <source srcset="img/medical-sister_xxl.webp" media="(min-width: 1440px)" type="image/webp">
             <source srcset="img/medical-sister_xxl.jpg" media="(min-width: 1440px)">
             <source srcset="img/medical-sister_desktop.webp" media="(min-width: 1280px)" type="image/webp">
@@ -108,7 +108,7 @@
             <source srcset="img/medical-sister_tablet.webp" media="(min-width: 768px)" type="image/webp">
             <source srcset="img/medical-sister_tablet.jpg" media="(min-width: 768px)">
             <source srcset="img/medical-sister.webp" type="image/webp">
-            <img src="img/medical-sister.jpg" alt="Медсестра" loading="lazy">
+            <img class="page__image-wrapper_pict" src="img/medical-sister.jpg" alt="Медсестра" loading="lazy">
           </picture>
         </figure>
         <div class="page__text-block">
@@ -117,7 +117,7 @@
           </p>
         </div>
         <figure class="page__image-block">
-          <picture class="page__image">
+          <picture class="page__image-wrapper">
             <source srcset="img/horse_xxl.webp" media="(min-width: 1440px)" type="image/webp">
             <source srcset="img/horse_xxl.jpg" media="(min-width: 1440px)">
             <source srcset="img/horse_desktop.webp" media="(min-width: 1280px)" type="image/webp">
@@ -127,7 +127,7 @@
             <source srcset="img/horse_tablet.webp" media="(min-width: 768px)" type="image/webp">
             <source srcset="img/horse_tablet.jpg" media="(min-width: 768px)">
             <source srcset="img/horse.webp" type="image/webp">
-            <img src="img/horse.jpg" alt="Лошадь" loading="lazy">
+            <img class="page__image-wrapper_pict" src="img/horse.jpg" alt="Лошадь" loading="lazy">
           </picture>
         </figure>
       </div>
@@ -143,7 +143,7 @@
         </div>
 
         <figure class="page__image-block">
-          <picture class="page__image">
+          <picture class="page__image-wrapper">
             <source srcset="img/leopard_xxl.webp" media="(min-width: 1440px)" type="image/webp">
             <source srcset="img/leopard_xxl.jpg" media="(min-width: 1440px)">
             <source srcset="img/leopard_desktop.webp" media="(min-width: 1280px)" type="image/webp">
@@ -153,7 +153,7 @@
             <source srcset="img/leopard_tablet.webp" media="(min-width: 768px)" type="image/webp">
             <source srcset="img/leopard_tablet.jpg" media="(min-width: 768px)">
             <source srcset="img/leopard.webp" type="image/webp">
-            <img src="img/leopard.jpg" alt="Леопард" loading="lazy">
+            <img class="page__image-wrapper_pict" src="img/leopard.jpg" alt="Леопард" loading="lazy">
           </picture>
         </figure>
         <div class="page__text-block">
@@ -165,7 +165,7 @@
           </p>
         </div>
         <figure class="page__image-block page__image-block_double">
-          <picture class="page__image">
+          <picture class="page__image-wrapper">
             <source srcset="img/boy_xxl.webp" media="(min-width: 1440px)" type="image/webp">
             <source srcset="img/boy_xxl.jpg" media="(min-width: 1440px)">
             <source srcset="img/boy_desktop.webp" media="(min-width: 1280px)" type="image/webp">
@@ -175,9 +175,9 @@
             <source srcset="img/boy_tablet.webp" media="(min-width: 768px)" type="image/webp">
             <source srcset="img/boy_tablet.jpg" media="(min-width: 768px)">
             <source srcset="img/boy.webp" type="image/webp">
-            <img src="img/boy.jpg" alt="Мальчик кормит оленей" loading="lazy">
+            <img class="page__image-wrapper_pict" src="img/boy.jpg" alt="Мальчик кормит оленей" loading="lazy">
           </picture>
-          <picture class="page__image">
+          <picture class="page__image-wrapper">
             <source srcset="img/monkeys_xxl.webp" media="(min-width: 1440px)" type="image/webp">
             <source srcset="img/monkeys_xxl.jpg" media="(min-width: 1440px)">
             <source srcset="img/monkeys_desktop.webp" media="(min-width: 1280px)" type="image/webp">
@@ -187,7 +187,7 @@
             <source srcset="img/monkeys_tablet.webp" media="(min-width: 768px)" type="image/webp">
             <source srcset="img/monkeys_tablet.jpg" media="(min-width: 768px)">
             <source srcset="img/monkeys.webp" type="image/webp">
-            <img src="img/monkeys.jpg" alt="Обезьяны" loading="lazy">
+            <img class="page__image-wrapper_pict" src="img/monkeys.jpg" alt="Обезьяны" loading="lazy">
           </picture>
         </figure>
         <div class="page__text-block">
@@ -199,7 +199,7 @@
           </p>
         </div>
         <figure class="page__image-block">
-          <picture class="page__image">
+          <picture class="page__image-wrapper">
             <source srcset="img/city_xxl.webp" media="(min-width: 1440px)" type="image/webp">
             <source srcset="img/city_xxl.jpg" media="(min-width: 1440px)">
             <source srcset="img/city_desktop.webp" media="(min-width: 1280px)" type="image/webp">
@@ -209,7 +209,7 @@
             <source srcset="img/city_tablet.webp" media="(min-width: 768px)" type="image/webp">
             <source srcset="img/city_tablet.jpg" media="(min-width: 768px)">
             <source srcset="img/city.webp" type="image/webp">
-            <img src="img/city.jpg" alt="Город" loading="lazy">
+            <img class="page__image-wrapper_pict" src="img/city.jpg" alt="Город" loading="lazy">
           </picture>
         </figure>
       </div>
@@ -222,7 +222,7 @@
         </div>
 
         <figure class="page__image-block">
-          <picture class="page__image">
+          <picture class="page__image-wrapper">
             <source srcset="img/cat_xxl.webp" media="(min-width: 1440px)" type="image/webp">
             <source srcset="img/cat_xxl.jpg" media="(min-width: 1440px)">
             <source srcset="img/cat_desktop.webp" media="(min-width: 1280px)" type="image/webp">
@@ -232,7 +232,7 @@
             <source srcset="img/cat_tablet.webp" media="(min-width: 768px)" type="image/webp">
             <source srcset="img/cat_tablet.jpg" media="(min-width: 768px)">
             <source srcset="img/cat.webp" type="image/webp">
-            <img src="img/cat.jpg" alt="Кошка" loading="lazy">
+            <img class="page__image-wrapper_pict" src="img/cat.jpg" alt="Кошка" loading="lazy">
           </picture>
         </figure>
         <div class="page__text-block">
@@ -244,7 +244,7 @@
           </p>
         </div>
         <figure class="page__image-block page__image-block_double">
-          <picture class="page__image">
+          <picture class="page__image-wrapper">
             <source srcset="img/dog-2_xxl.webp" media="(min-width: 1440px)" type="image/webp">
             <source srcset="img/dog-2_xxl.jpg" media="(min-width: 1440px)">
             <source srcset="img/dog-2_desktop.webp" media="(min-width: 1280px)" type="image/webp">
@@ -254,9 +254,9 @@
             <source srcset="img/dog-2_tablet.webp" media="(min-width: 768px)" type="image/webp">
             <source srcset="img/dog-2_tablet.jpg" media="(min-width: 768px)">
             <source srcset="img/dog-2.webp" type="image/webp">
-            <img src="img/dog-2.jpg" alt="Собака" loading="lazy">
+            <img class="page__image-wrapper_pict" src="img/dog-2.jpg" alt="Собака" loading="lazy">
           </picture>
-          <picture class="page__image">
+          <picture class="page__image-wrapper">
             <source srcset="img/cat-2_xxl.webp" media="(min-width: 1440px)" type="image/webp">
             <source srcset="img/cat-2_xxl.jpg" media="(min-width: 1440px)">
             <source srcset="img/cat-2_desktop.webp" media="(min-width: 1280px)" type="image/webp">
@@ -266,7 +266,7 @@
             <source srcset="img/cat-2_tablet.webp" media="(min-width: 768px)" type="image/webp">
             <source srcset="img/cat-2_tablet.jpg" media="(min-width: 768px)">
             <source srcset="img/cat-2.webp" type="image/webp">
-            <img src="img/cat-2.jpg" alt="Кошка" loading="lazy">
+            <img class="page__image-wrapper_pict" src="img/cat-2.jpg" alt="Кошка" loading="lazy">
           </picture>
         </figure>
         <div class="page__text-block">
@@ -275,7 +275,7 @@
           </p>
         </div>
         <figure class="page__image-block">
-          <picture class="page__image">
+          <picture class="page__image-wrapper">
             <source srcset="img/hands_xxl.webp" media="(min-width: 1440px)" type="image/webp">
             <source srcset="img/hands_xxl.jpg" media="(min-width: 1440px)">
             <source srcset="img/hands_desktop.webp" media="(min-width: 1280px)" type="image/webp">
@@ -285,7 +285,7 @@
             <source srcset="img/hands_tablet.webp" media="(min-width: 768px)" type="image/webp">
             <source srcset="img/hands_tablet.jpg" media="(min-width: 768px)">
             <source srcset="img/hands.webp" type="image/webp">
-            <img src="img/hands.jpg" alt="Руки" loading="lazy">
+            <img class="page__image-wrapper_pict" src="img/hands.jpg" alt="Руки" loading="lazy">
           </picture>
         </figure>
       </div>
@@ -301,7 +301,7 @@
         </div>
 
         <figure class="page__image-block">
-          <picture class="page__image">
+          <picture class="page__image-wrapper">
             <source srcset="img/dog_xxl.webp" media="(min-width: 1440px)" type="image/webp">
             <source srcset="img/dog_xxl.jpg" media="(min-width: 1440px)">
             <source srcset="img/dog_desktop.webp" media="(min-width: 1280px)" type="image/webp">
@@ -311,7 +311,7 @@
             <source srcset="img/dog_tablet.webp" media="(min-width: 768px)" type="image/webp">
             <source srcset="img/dog_tablet.jpg" media="(min-width: 768px)">
             <source srcset="img/dog.webp" type="image/webp">
-            <img src="img/dog.jpg" alt="Собачка" loading="lazy">
+            <img class="page__image-wrapper_pict" src="img/dog.jpg" alt="Собачка" loading="lazy">
           </picture>
         </figure>
         <div class="page__text-block">
@@ -320,7 +320,7 @@
           </p>
         </div>
         <figure class="page__image-block page__image-block_double">
-          <picture class="page__image">
+          <picture class="page__image-wrapper">
             <source srcset="img/people-left_desktop.webp" media="(min-width: 1280px)" type="image/webp">
             <source srcset="img/people-left_desktop.jpg" media="(min-width: 1280px)">
             <source srcset="img/people-left_xxl.webp" media="(min-width: 1440px)" type="image/webp">
@@ -330,9 +330,9 @@
             <source srcset="img/people-left_tablet.webp" media="(min-width: 768px)" type="image/webp">
             <source srcset="img/people-left_tablet.jpg" media="(min-width: 768px)">
             <source srcset="img/people-left.webp" type="image/webp">
-            <img src="img/people-left.jpg" alt="Люди. Фото 1" loading="lazy">
+            <img class="page__image-wrapper_pict" src="img/people-left.jpg" alt="Люди. Фото 1" loading="lazy">
           </picture>
-            <picture class="page__image">
+            <picture class="page__image-wrapper">
             <source srcset="img/people-right_xxl.webp" media="(min-width: 1440px)" type="image/webp">
             <source srcset="img/people-right_xxl.jpg" media="(min-width: 1440px)">
             <source srcset="img/people-right_desktop.webp" media="(min-width: 1280px)" type="image/webp">
@@ -342,7 +342,7 @@
             <source srcset="img/people-right_tablet.webp" media="(min-width: 768px)" type="image/webp">
             <source srcset="img/people-right_tablet.jpg" media="(min-width: 768px)">
             <source srcset="img/people-right.webp" type="image/webp">
-            <img src="img/people-right.jpg" alt="Люди. Фото 2" loading="lazy">
+            <img class="page__image-wrapper_pict" src="img/people-right.jpg" alt="Люди. Фото 2" loading="lazy">
           </picture>
         </figure>
         <div class="page__text-block">
@@ -351,7 +351,7 @@
           </p>
         </div>
         <figure class="page__image-block">
-          <picture class="page__image">
+          <picture class="page__image-wrapper">
             <source srcset="img/women_xxl.webp" media="(min-width: 1440px)" type="image/webp">
             <source srcset="img/women_xxl.jpg" media="(min-width: 1440px)">
             <source srcset="img/women_desktop.webp" media="(min-width: 1280px)" type="image/webp">
@@ -361,7 +361,7 @@
             <source srcset="img/women_tablet.webp" media="(min-width: 768px)" type="image/webp">
             <source srcset="img/women_tablet.jpg" media="(min-width: 768px)">
             <source srcset="img/women.webp" type="image/webp">
-            <img src="img/women.jpg" alt="Женщина" loading="lazy">
+            <img class="page__image-wrapper_pict" src="img/women.jpg" alt="Женщина" loading="lazy">
           </picture>
         </figure>
         <a href="#career" class="page__link link-main">Вакансии</a>
